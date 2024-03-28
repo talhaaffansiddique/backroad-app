@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Title = ({ title, subTitle }) => {
+export const Title = ({ id, title, subTitle }) => {
   return (
     <div className="section-title">
       <h2>
