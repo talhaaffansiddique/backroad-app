@@ -6,7 +6,7 @@ const Footer = () => {
     <footer class="section footer">
       <ul class="footer-links">
         {pageLinks.map((link) => {
-          const { id, href, text } = link;
+          const { href, text } = link;
           return (
             <li>
               <a href={href} class="footer-link">
@@ -18,10 +18,15 @@ const Footer = () => {
       </ul>
       <ul class="footer-icons">
         {socialLinks.map((link) => {
-          const { id, href, icon } = link;
+          const { href, icon } = link;
           return (
             <li>
-              <a href={href} target="_blank" class="footer-icon">
+              <a
+                href={href}
+                target="_blank"
+                rel="noreferrer"
+                class="footer-icon"
+              >
                 <i class={icon}></i>
               </a>
             </li>
