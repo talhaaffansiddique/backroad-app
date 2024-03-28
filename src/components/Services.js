@@ -9,18 +9,15 @@ const Services = () => {
 
       <div className="section-center services-center">
         {services.map((service) => {
-          const { id, title, icon, text } = service;
+          const { title, icon, text } = service;
           return (
             <article className="service">
               <span className="service-icon">
-                <i className="fas fa-wallet fa-fw"></i>
+                <i className={icon}></i>
               </span>
               <div className="service-info">
-                <h4 className="service-title">saving money</h4>
-                <p className="service-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Asperiores, officia.
-                </p>
+                <h4 className="service-title">{title}</h4>
+                <p className="service-text">{text}</p>
               </div>
             </article>
           );
